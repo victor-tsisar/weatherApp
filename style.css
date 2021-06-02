@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(50, 117, 180), rgb(57, 75, 179));
+    font-family: sans-serif;
+    color: #FFFFFF;
+}
+.location {
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.location__timezone{
+    margin-bottom: 10px;
+}
+.location__info {
+    display: flex;
+    flex-direction: column;
+}
+.icon {
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
+}
+.temperature__degree {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+.temperature__system{
+    font-size: 30px;
+}
+.characteristics{
+    display: flex;
+    flex-direction: column;
+}
+.characteristics p {
+    margin-bottom: 10px;
+}
+.update{
+    padding: 10px 25px;
+    font-family: inherit;
+    font-weight: 500;
+    color: inherit;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: rgb(50, 117, 180);
+    margin-top: 25px;
+    cursor: pointer;
+}
+.update:disabled{
+    opacity: 0.5;
+}

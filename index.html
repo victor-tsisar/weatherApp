@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="skycons.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="location">
+        <div class="location__info">
+            <h1 class="location__timezone">Timezone</h1>
+            <p class="location__place"></p>
+        </div>
+        <canvas class="icon" id="icon" width="128" height="128"></canvas>
+    </div>
+
+    <div class="description">
+        <div class="temperature">
+            <h2 class="temperature__degree">degrees</h2>
+        </div>
+        
+        <div class="characteristics">
+            <p class="characteristics__precip">Probability of precipitation</p>
+            <p class="characteristics__wind">Speed of wind</p>
+            <p class="characteristics__pressure">Atmospheric pressure</p>
+        </div>
+    </div>
+
+    <button class="update" disabled>update</button>
+</body>
+</html>
